@@ -1,0 +1,209 @@
+body {
+	background-color: #F3F3F3;
+	font-family: 'Roboto', 'Arial', Sans-Serif;
+}
+
+#sums_container {
+	background-color: white;
+	max-width: 575px;
+	width: 50%;
+	height: auto;
+	margin: auto;
+	margin-top: 100px;
+	box-shadow: 0 1px 8px rgba(0,0,0,0.3);
+}
+
+#sums_title {
+	font-weight: 100;
+	font-size: 2.1em;
+	color: #777;
+	text-align: center;
+	padding: 20px 0;
+}
+
+#sums_header_div {
+	width: 100%;
+	height: 40px;
+	background-color: #ECECEC;
+	border-top: 1px solid #E8E8E8;
+	border-bottom: 1px solid #E8E8E8;
+}
+
+.sums_headers {
+	width: 50%;
+	display: inline;
+	float: left;
+	text-align: center;
+	color: #777;
+	font-size: .9em;
+	padding: 13px 0 0;
+}
+
+
+/* --- Item Divs CSS --- */
+
+.item_divs {
+	height: 65px;
+	border-bottom: 1px solid #E8E8E8;
+}
+
+.item_number_div, .item_input_container {
+	width: 50%;
+	height: 64px;
+	display: block;
+	float: left;
+}
+
+.item_number {
+	padding: 25px 0 0 30px;
+	color: #555;
+	font-family: 'Roboto', 'Arial', Sans-Serif;
+	font-weight: 300;
+}
+
+.item_input, .item_close_x {
+	display: block;
+	float: right;
+	height: 64px;
+}
+
+.item_input {
+	width: 80%;
+}
+
+.item_close_x {
+	width: 20%;
+}
+
+
+/* --- X button CSS --- */
+
+div.x {
+	height: 64px;
+	width: 20px;
+	margin: 0 0 0 13px;
+	position: relative;
+}
+
+div.x:hover:before, div.x:hover:after {
+	background-color: #333;
+}
+
+div.x:active:before, div.x:active:after {
+	background-color: black;
+}
+
+div.x:before, div.x:after {
+	content: '';
+	position: absolute;
+	width: 20px;
+	height: 1px;
+	background-color: #777;
+	border-radius: 2px;
+	top: 32px;
+}
+
+div.x:before {
+	-webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    transform: rotate(45deg);
+    left: -2px;
+}
+
+div.x:after {
+	-webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    right: 2px;
+}
+
+
+/* --- Input CSS --- */
+
+input {
+    border-top: 1px solid #DBDBDB;
+    border-right: 1px solid #DBDBDB;
+    border-bottom: 1px solid #F0F0F0;
+    border-left: 1px solid #DBDBDB;
+    border-radius: 4px;
+    background-color: rgba(0,0,0,.02);
+    margin: 15px 0 0 25px;
+    padding: 6px 15px;
+    width: 71%;
+    box-shadow:inset -1px 2px 3px -1px rgba(0,0,0,.08);
+    font-size: 1.1em;
+    font-family: 'Roboto', 'Arial', Sans-Serif;
+	font-weight: 300;
+	text-align: right;
+}
+
+#new_item_div {
+	height: 65px;
+	border-bottom: 1px solid #E8E8E8;
+}
+
+button:hover {
+	background-color: #1883D5;
+}
+
+button:active {
+	background-color: #1A91EC;
+}
+
+button {
+	border: none;
+	border-radius: 4px;
+	height: 34px;
+	width: 130px;
+	margin: 15px 0 0 16px;
+	color: white;
+	background-color: #1B95FC;
+	font-family: 'Roboto', 'Arial', Sans-Serif;
+	font-weight: 300;
+	font-size: 1em;
+	box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+input:focus, button:focus {
+    outline: none;
+}
+
+#total_div {
+	height: 100px;
+	border-bottom: 1px solid #E8E8E8;
+	background-color: rgba(0,0,0,.02);
+}
+
+#total_header {
+	display: inline;
+	float: left;
+	font-size: 1.8em;
+	font-family: 'Roboto', 'Arial', Sans-Serif;
+	font-weight: 300;
+	color: #1475DA;
+	margin: 35px 0 0 30px;
+}
+
+#sum_number {
+	display: inline;
+	float: right;
+	font-size: 3.5em;
+	font-family: 'Roboto', 'Arial', Sans-Serif;
+	color: #1475DA;
+	margin: 20px 30px 0 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
