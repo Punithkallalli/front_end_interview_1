@@ -1,21 +1,9 @@
 $(document).ready(function(){
-	var item_div = '<div class="item_divs">'+
-						'<div class="item_number_div">'+
-							'<h3 class="item_number">Item <span class="count">1</span></h3>'+
-						'</div>'+
-						'<div class="item_input_container">'+
-							'<div class="item_close_x">'+
-								'<div class="x"></div>'+
-							'</div>'+
-							'<div class="item_input">'+
-								'<input type="text" name="number_n" value="0"'+
-							'</div>'+
-						'</div>'+
-					'</div>';
 
-
-    $("button").click(function(){
+    $(document).on('click', "button", function(){
+    	var item_div = $(".item_divs").first().clone();
     	$(".item_divs").last().after(item_div);
+    	console.log($(".item_divs").last()[0].outerHTML);
     });
 
     $(document).on('click', "div.x", function(){
