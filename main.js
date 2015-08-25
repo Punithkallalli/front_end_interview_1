@@ -8,7 +8,7 @@ $(document).ready(function(){
 								'<div class="x"></div>'+
 							'</div>'+
 							'<div class="item_input">'+
-								'<input type="text" name="number_n" value="0"'+
+								'<input type="text" name="number_n" value="0" onblur=""'+
 							'</div>'+
 						'</div>'+
 					'</div>';
