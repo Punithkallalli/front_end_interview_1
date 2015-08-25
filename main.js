@@ -1,5 +1,13 @@
 $(document).ready(function(){
 
+	function sumNumbers() {
+		var totalSum = 0;
+		$("input").each(function(){
+			totalSum += parseInt($(this).val());
+		})
+		return totalSum
+	}
+
     $(document).on('click', "button", function(){
     	var item_div = $(".item_divs").first().clone();
     	$(".item_divs").last().after(item_div);
@@ -8,6 +16,10 @@ $(document).ready(function(){
 
     $(document).on('click', "div.x", function(){
         $(this).closest(".item_divs").slideUp("normal", function() { $(this).remove() } );
+    });
+
+    $(document).on('click', document, function(){
+    	$("#sum_number").text(sumNumbers());
     });
 
 });
