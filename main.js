@@ -8,7 +8,7 @@ $(document).ready(function(){
 								'<div class="x"></div>'+
 							'</div>'+
 							'<div class="item_input">'+
-								'<input type="text" name="number_n" value="0" onblur=""'+
+								'<input type="text" name="number_n" value="0"'+
 							'</div>'+
 						'</div>'+
 					'</div>';
@@ -23,3 +23,7 @@ $(document).ready(function(){
     });
 
 });
+
+// Add functions for onblur and onfocus
+// Add function for summing numbers
+// Add function for counting off item numbers
