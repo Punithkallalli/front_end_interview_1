@@ -18,6 +18,7 @@ body {
 	font-size: 2.1em;
 	color: #777;
 	text-align: center;
+	text-transform: capitalize;
 	padding: 20px 0;
 }
 
@@ -34,6 +35,7 @@ body {
 	display: inline;
 	float: left;
 	text-align: center;
+	text-transform: capitalize;
 	color: #777;
 	font-size: .9em;
 	padding: 13px 0 0;
@@ -45,6 +47,7 @@ body {
 .item_divs {
 	height: 65px;
 	border-bottom: 1px solid #E8E8E8;
+	text-transform: capitalize;
 }
 
 .item_number_div, .item_input_container {
@@ -137,6 +140,9 @@ input {
 	text-align: right;
 }
 
+
+/* --- Div with "NEW ITEM" button --- */
+
 #new_item_div {
 	height: 65px;
 	border-bottom: 1px solid #E8E8E8;
@@ -161,12 +167,16 @@ button {
 	font-family: 'Roboto', 'Arial', Sans-Serif;
 	font-weight: 300;
 	font-size: 1em;
+	text-transform: uppercase;
 	box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
 
 input:focus, button:focus {
     outline: none;
 }
+
+
+/* --- Div with "TOTAL" button --- */
 
 #total_div {
 	height: 100px;
@@ -180,6 +190,7 @@ input:focus, button:focus {
 	font-size: 1.8em;
 	font-family: 'Roboto', 'Arial', Sans-Serif;
 	font-weight: 300;
+	text-transform: uppercase;
 	color: #1475DA;
 	margin: 35px 0 0 30px;
 }
