@@ -16,12 +16,13 @@ $(document).ready(function(){
         $(".item_divs span").each(function( index ) {
         	$(this).text(index + 1);
         });
+
+        $("#sum_number").text(sumNumbers());
     };
 
     $(document).on('click', 'button', function(){
     	var count = $(".item_divs").size() + 1;
     	var itemDiv = $(".item_divs").last().clone();
-    	console.log(itemDiv.html());
 
     	$(".item_divs").last().after(itemDiv);
     	$(".item_divs span").last().text(count);
@@ -33,11 +34,6 @@ $(document).ready(function(){
         	update();
         });
     });
-
-
-    // $(document).bind("DOMNodeRemoved", function(){
-    // 	$("#sum_number").text(sumNumbers());
-    // });
 
     $(document).on('click', document, function(){
     	$("#sum_number").text(sumNumbers());
