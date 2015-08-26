@@ -1,5 +1,7 @@
 $(document).ready(function(){
 
+	alert('Click "NEW ITEM" to items. The sum feature works too.');
+
 	function sumNumbers() {
 		var totalSum = 0;
 		$("input").each(function(){
@@ -8,22 +10,22 @@ $(document).ready(function(){
 		return totalSum
 	}
 
-    $(document).on('click', "button", function(){
-    	var item_div = $(".item_divs").first().clone();
-    	$(".item_divs").last().after(item_div);
-    	console.log($(".item_divs").last()[0].outerHTML);
+    $(document).on('click', 'button', function(){
+    	var count = $(".item_divs").size() + 1;
+    	var itemDiv = $(".item_divs").last().clone();
+    	console.log(itemDiv.html());
+
+    	$(".item_divs").last().after(itemDiv);
+    	$(".item_divs span").last().text(count);
     });
 
-    $(document).on('click', "div.x", function(){
-        $(this).closest(".item_divs").slideUp("normal", function() { $(this).remove() } );
+    $(document).on('click', 'div.x', function(){
+        $(this).closest(".item_divs").slideUp('normal', function() { $(this).remove() } );
     });
 
     $(document).on('click', document, function(){
     	$("#sum_number").text(sumNumbers());
+    	// $("body")[0].click(); not working...
     });
 
 });
-
-// Add functions for onblur and onfocus
-// Add function for summing numbers
-// Add function for counting off item numbers
