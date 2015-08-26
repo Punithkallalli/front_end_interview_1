@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-	// alert('Click "NEW ITEM" to items. The sum feature works too.');
+	alert('Click "NEW ITEM" to add items. The sum feature works too.');
 
 	function sumNumbers() {
 		var totalSum = 0;
